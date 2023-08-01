@@ -1,0 +1,484 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+title{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+
+header{
+    background: #000;
+    flex-basis: 110px;
+    padding: 20px 0px 0px 0px;
+}
+
+.boton-menu{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 10px 0px;
+    padding: 10px;
+}
+.boton-menu p{
+    margin: 0px 5px;
+}
+.nav_responsive_ul{
+    padding: 5px;
+    font-weight: bold;
+    list-style: none;
+    color: #fff;
+    background: #000;
+}
+.nav_responsive_ul li{
+    margin: 8px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_responsive_ul li a{
+    color: #fff;
+}
+
+.nav_brand{
+    display: flex;
+    justify-content: center;
+}
+.nav_brand a{
+    display: block;
+}
+.nav_brand a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav_brand_logo{
+    width: 100px;
+    height: 100px;
+}
+
+.nav_brand_name{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main */
+
+main{
+    color: #fff;
+    flex-basis: 400px;
+    background-image: url("/img/fondo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200% 200%;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+#content{
+    padding: 15px;
+    background: #0007;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+h3{
+    color: #fff;
+    text-align: center;
+}
+
+.videos ul{
+    list-style: none;
+}
+
+.video-container{
+    margin: 30px 0px;
+}
+.video-container .vidframe{
+    width: 100%;
+    height: 195px;
+}
+.video-container .vidframe iframe{
+    width: 100%;
+    height: 100%;
+}
+.vidinfo{
+    padding: 10px 10px 0px 10px;
+}
+.vidinfo p{
+    text-align: center;
+    color: #fff;
+}
+.vidinfo p span{
+    font-weight: bold;
+    color: #0d14bc;
+}
+
+/* footer */
+
+footer{
+    background: #000;
+    color: #fff;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.info_content{
+    padding: 10px;
+}
+.info_content ul{
+    list-style: none;
+}
+.info_content ul li{
+    text-align: center;
+}
+.about-us{
+    font-weight: bold;
+    color: #0d14bc;
+    text-transform: uppercase;
+}
+.sub{
+    margin: 10px 0px;
+    text-align: center;
+}
+.suscribete_input{
+    border: 2px solid #0d14bc;
+    width: 65%;
+    padding: 5px;
+    margin: 2px;
+}
+.send_box{
+    margin: 2px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 2px solid #0d14bc;
+    font-weight: bold;
+    background: #fff;
+}
+
+.marketing{
+    text-align: center;
+}
+.market{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.fb , .yt{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+.market a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact{
+    text-align: center;
+}
+.contacts_content{
+    display: flex;
+    justify-content: center;
+}
+.whatsapp{
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+}
+.whatsapp a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.copy{
+    text-align: center;
+}
+
+/*  */
+/* PRODUCTOS */
+/*  */
+
+#products_container{
+    background: #0007;
+    color: #fff;
+    text-align: center;
+    padding: 20px 20px 10px 20px;
+}
+#products_container h1{
+    margin: 10px 0px;
+}
+.area_container{
+    margin: 20px 0px;
+}
+.area_products{
+    margin: 30px 0px 0px 0px;
+}
+.area_products h5{
+    font-size: 18px;
+    color: #0d14bc;
+    font-weight: 900;
+    text-shadow: 0px 0px 18px #fff;
+    text-transform: uppercase;
+}
+.area_products h6{
+    font-size: 15px;
+    margin: 2px 0px;
+}
+.area_content_info{
+    font-size: 13px;
+    margin: 5px 0px;
+}
+.profile_area_img{
+    display: flex;
+    justify-content: center;
+}
+.profile_area_user{
+    width: 130px;
+    height: 130px;
+    padding: 0;
+    margin: 10px 0px;
+    overflow: hidden;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 3px solid #fff;
+    box-shadow: -3px 3px 10px #fff9;
+}
+.profile_area_user img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Carrusel */
+#products_container .area_products.owl-container .owl-nav{
+    position: absolute;
+    bottom: 65%;
+    width: 100%;
+}
+#products_container .area_products.owl-container .owl-nav .owl-prev{
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    background: transparent;
+}
+#products_container .area_products.owl-container .owl-nav .owl-next{
+    position: absolute;
+    right: 0; 
+    font-size: 40px;
+    background: transparent;
+}
+.owl-dots > button.owl-dot.active > span{
+    background: #0d14bc !important;
+}
+/* Termina carrusel */
+
+/* Servicios */
+
+#services_container{
+    background: #0005;
+    padding: 20px;
+}
+#services_container h1{
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+.services_portal p , .services_description p{
+    text-align: justify;
+}
+.services_list{
+    padding: 0px 20px;
+}
+.services_list ul{
+    list-style-type: "\1F3B5";
+}
+.services_list ul li{
+    font-size: 13px;
+    margin: 5px;
+    text-indent: 5px;
+}
+    /* Proximamente Servicios */
+#services_container .prox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #0d14bc;
+}
+#services_container .prox:active{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+#services_container .services_img{
+    background-color: #c7c7c7;
+    margin: 20px 0px;
+    height: 200px;
+    font-weight: 800;
+    user-select: none;
+    filter: grayscale(100%);
+}
+#services_container .services_img:active{
+    background: #d3d3d3;
+    filter: grayscale(10%);
+}
+    /* Termina proximamente servicios*/
+
+/* Galería */
+
+#galery_content{
+    background: #0007;
+    padding: 15px;
+}
+#galery_content h1{
+    text-align: center;
+}
+
+#galery_content .galery_info{
+    text-align: justify;
+}
+#galery_content .galery_container{
+    width: 100%;
+    margin: 30px 0px;
+    position: relative;
+}
+/* Proximamente Galeria */
+#galery_content .prox{
+    display: flex;
+    background: #D5D8DC;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: #0d14bc;
+}
+#galery_content .prox:active{
+    background: #E5E8E8;
+    transform: scaleX(1.1) scaleY(1.1);
+}
+#galery_content .galery_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#galery_content .galery_img{
+    background-color: #c7c7c7;
+    height: 200px;
+    font-weight: 800;
+    user-select: none;
+    filter: grayscale(100%);
+}
+#galery_content .galery_img:active{
+    background: #d3d3d3;
+    filter: grayscale(0%);
+}
+/* Termina proximamente Galería */
+/* Slick Galeria */
+.galery_container .slick-arrow{
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    font-size: 0px;
+}
+.galery_container .slick-next{
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    z-index: 2;
+}
+.galery_container .slick-prev{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 2;
+}
+.galery_container .slick-next::before{
+    font-size: 30px;
+    content: "\1F846";
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+.galery_container .slick-prev::before{
+    font-size: 30px;
+    content: "\1F844";
+    visibility: visible;
+    opacity: 1;
+    color: #fff;
+}
+.galery_container .slick-dots{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.galery_container .slick-dots li{
+    background: #777;
+    margin: 15px 2px;
+    width: 20px;
+    height: 8px;
+}
+.galery_container .slick-dots li button{
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    font-size: 0px;
+}
+.galery_container .slick-active{
+    background: #0d14bc !important;
+}
+/* Termina Slick Galeria */
+
+@media screen and (min-width: 1024px){
+    body{
+        display: grid;
+        grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header{
+        grid-column: 1 / span 3;
+    }
+
+    main{
+        grid-row: 2 / 6;
+        grid-column: 1 / span 2;
+    }
+    
+    aside{
+        grid-row: 2 / 6;
+    }
+
+    footer{
+        grid-row: 6 / 7;
+        grid-column: 1 / span 3;
+
+    }
+}
